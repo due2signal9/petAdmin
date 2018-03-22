@@ -82,10 +82,10 @@ DATABASES = {
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pet',
-        'USER': 'petdev',
-        'PASSWORD': 'petdevdb',
-        'HOST': '116.196.97.169',
-        'PORT': '3313',
+        'USER': 'petdbdev',
+        'PASSWORD': 'petdbdev',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
