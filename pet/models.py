@@ -24,6 +24,14 @@ class PetInfo(models.Model):
         verbose_name_plural = u'宠物信息'
         db_table = 'pet_pet_info'
 
+    title = models.CharField(u'标题', max_length=64, null=False, blank=False)
+    # district = models.CharField(u'', max_length=64, null=False, blank=False)
+    description = models.CharField(u'详情描述', max_length=256, null=True, blank=True)
+    image1 = models.CharField(u'图片描述1', max_length=256, null=False, blank=False)
+    image2 = models.CharField(u'图片描述2', max_length=256, null=False, blank=False)
+    image3 = models.CharField(u'图片描述3', max_length=256, null=False, blank=False)
+    comment_count = models.IntegerField(u'', default=0)
+    # comments =
     is_blocked = models.SmallIntegerField(u'被禁状态', default=0)
     is_deleted = models.SmallIntegerField(u'删除状态', default=0)
     time_created = models.DateTimeField(u'创建时间', auto_now_add=True)
